@@ -46,8 +46,6 @@ header .burger{
     color: var(--branco);
     text-decoration: none;
 
-    
-
 }
 
 button{
@@ -74,27 +72,12 @@ button:hover{
 }
 
 .banner{
-    height: 385px;
+    height: 60vh;
 
-    background-image: url(img/BannerLW\ 1.png);
+    background-image: url(img/BannerLW.png);
 
     background-repeat: no-repeat;
     background-size: 100%;
-
-    display: flex;
-    align-items: center;
-    
-
-}
-
-.banner p{
-    color: var(--branco);
-
-    font-family: 'Rowdies';
-    font-size: 45px;
-
-    margin: 65px;
-    
 }
 
 .grid {
@@ -105,14 +88,14 @@ button:hover{
 }
 
 h2 {
+    margin-top: 20px;
+
     color: #E1E7E8;
 
     font-family: 'Rowdies';
     font-size: 30px;
 
     text-align: center;
-
-    padding-top: 45px;
 }
 
 #sobre p{
@@ -124,6 +107,7 @@ h2 {
     text-align: center;
 
     padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .cont {
@@ -208,6 +192,8 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    position: relative;
 }
 
 form label{
@@ -265,7 +251,7 @@ textarea {
 #enviar {
     position: absolute;
 
-    top: 2590px;
+    bottom: -30px;
 }
 
 footer{
@@ -307,7 +293,12 @@ footer{
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1500px) {
+    .banner {
+    height: 50vh;
+    }
+}
+@media screen and (max-width: 1350px) {
     header {
         position: relative;
     }
@@ -344,56 +335,58 @@ footer{
         top: 70px;
         right: 65px;
     }
-
-    .banner p {
-        font-size: 35px;
-    }
+    
 }
 
+
 @media screen and (max-width: 1200px) {
-    .banner{
-        height: 345px;
-    }
-
-    .banner p {
-        font-size: 30px;
-    }
-
     .cont {
         height: fit-content;
-        flex-wrap: wrap;
+
+        justify-content: space-between;
     }
 
     .card {
-        height: 800px;
-        width: 90%;
+    width: 370px;
 
-        margin-bottom: 20px;
+    margin: 20px;
 
-        padding: 30px;
     }
 
- 
-    #enviar {
-        position: absolute;
-    
-        top: 3400px;
+}
+
+@media screen and (max-width: 1100px) {
+   .banner{
+    height: 40vh;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+    .cont{
+        flex-wrap: wrap;
+
+        justify-content: center;
     }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 800px) {
     .banner{
-        height: 280px;
+        height: 30vh;
     }
 
-    .banner p {
-        font-size: 25px;
+    header img{
+        height: 90px;
     }
 
-    #enviar {
-        position: absolute;
-
-        top: 3340px;
+    nav.menu {
+        width: 40%;
     }
+
+    .card{
+        width: 100%;
+    }
+    
 }
+
+
 
