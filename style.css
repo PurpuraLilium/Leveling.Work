@@ -446,11 +446,27 @@ footer{
         right: 0;
     }
 
+    .banner{
+        height: 100vh;
+    
+        background-image: url(img/LWbanner2.png);
+    
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
     .card{
         height: fit-content;
 
         padding: 10px;
     }
+}
+
+@media screen and (max-width: 450px) {
+    .banner{
+        height: 80vh;
+    }
+    
 }
 
 
