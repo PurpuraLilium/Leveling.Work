@@ -156,7 +156,10 @@ h2 {
     width: 100%;
 
     padding-top: 35px;
+}
 
+#big {
+    display: none;
 }
 
 #jogo img:hover{
@@ -459,6 +462,14 @@ footer{
         height: fit-content;
 
         padding: 10px;
+    }
+
+    #small{
+        display: none;
+    }
+
+    #big {
+        display: unset;
     }
 }
 
