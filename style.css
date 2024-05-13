@@ -296,6 +296,14 @@ footer{
     transform: scale(1.05);
 }
 
+.menu-fechado{
+    display: none;
+}
+
+#abrir{
+    display: none;
+}
+
 @media screen and (max-width: 1500px) {
     .banner {
     height: 50vh;
@@ -330,7 +338,7 @@ footer{
 
         padding: 10px;
 
-        border-radius: 15px;
+        border-radius: 15px 0 15px 15px;
 
         background-color: #2E2931;
 
@@ -340,7 +348,7 @@ footer{
         justify-content: space-around;
         align-items: center;
 
-        top: 70px;
+        top: 130px;
         right: 65px;
     }
     
@@ -447,6 +455,7 @@ footer{
         width: 100%;
         
         right: 0;
+        border-radius: 0;
     }
 
     .banner{
