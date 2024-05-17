@@ -34,7 +34,7 @@
             <a href="#contato"><button>Contato</button></a>
         </nav>
 
-        <button id="burguer" class="burger" onclick="AbrirFechar()">
+        <button class="burger" onclick="AbrirFechar()">
             <svg id="abrir" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512">
                 <path
@@ -91,20 +91,20 @@
     <section id="contato">
         <h2>Contato</h2>
 
-        <form>
+        <form onsubmit="formulario(event)">
             <div class="campo">
                 <label for="name">Nome:</label>
-                <input id="name" type="text" placeholder="Digite aqui...">
+                <input required id="name" type="text" placeholder="Digite aqui...">
             </div>
 
             <div class="campo">
                 <label for="mail">E-mail:</label>
-                <input type="email" name="" id="mail" placeholder="Digite aqui...">
+                <input required type="email" name="" id="mail" placeholder="Digite aqui...">
             </div>
 
             <div class="campo">
                 <label for="txta">Motivo do contato:</label>
-                <textarea name="" id="txta" cols="30" rows="10" placeholder="Digite aqui..."></textarea>
+                <textarea required name="" id="txta" cols="30" rows="10" placeholder="Digite aqui..."></textarea>
             </div>
 
             <button type="submit" id="enviar">Enviar</button>

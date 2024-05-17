@@ -315,7 +315,7 @@ footer{
     }
     
     header .burger {
-        width: 50px;
+        width: 250px;
 
         display: flex;
 
@@ -325,9 +325,21 @@ footer{
 
         background: var(--roxo);
         border: none;
+
+        border-radius: 10px 10px 0 0;
+
+        display: flex;
+        justify-content: flex-end;
+
+        z-index: 1;
+    }
+
+    header button:hover {
+        transform: unset;
     }
 
     .burger svg {
+        width: 50px;
         fill: var(--branco);
 
     }
@@ -338,7 +350,7 @@ footer{
 
         padding: 10px;
 
-        border-radius: 15px 0 15px 15px;
+        border-radius: 0 0 15px 15px;
 
         background-color: #2E2931;
 
