@@ -5,6 +5,7 @@ let abrir = document.getElementById("abrir")
 let fechar = document.getElementById("fechar")
 let burger = document.querySelector(".burger")
 
+
 function AbrirFechar(){
     if(menu.classList.contains("menu-fechado")){
         menu.classList.remove("menu-fechado")
@@ -14,6 +15,10 @@ function AbrirFechar(){
         fechar.style.display = "inline"
 
         burger.style.width = "250px"
+
+        if (innerWidth <= 565){
+            burger.style.width = "100%"
+        }
         
     }
     else{
